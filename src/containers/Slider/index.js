@@ -5,7 +5,6 @@ import { getMonth } from "../../helpers/Date";
 import "./style.scss";
 
 const Slider = () => {
-
   const { data } = useData();
   const [index, setIndex] = useState(0);
 
@@ -17,23 +16,24 @@ const Slider = () => {
     // Ajout d'un If pour (byDateDesc)
     if (byDateDesc) {
       setTimeout(
-      // Add - 1 à byDateDesc.length
+        // Add - 1 à byDateDesc.length
         () => setIndex(index < byDateDesc.length - 1 ? index + 1 : 0),
         5000
-    );
-      }
+      );
+    }
   };
 
   useEffect(() => {
     nextCard();
-  });
+  }, []);
 
   return (
     <div className="SlideCardList">
       {byDateDesc?.map((event, idx) => (
         // ajout de <div key={event.title}> autour des éléments qui rend chaque itération du mapping unique
         <div key={event.title}>
-          <div className={`SlideCard SlideCard--${
+          <div
+            className={`SlideCard SlideCard--${
               index === idx ? "display" : "hide"
             }`}
           >
@@ -50,12 +50,10 @@ const Slider = () => {
             <div className="SlideCard__pagination">
               {byDateDesc.map((e, radioIdx) => (
                 <input
-
-                // Change la valeur de event.id en e.title
+                  // Change la valeur de event.id en e.title
                   key={`${e.title}`}
                   type="radio"
                   name="radio-button"
-
                   // change idx en index
                   checked={index === radioIdx}
                   // Ajout de readOnly
