@@ -1,6 +1,6 @@
 # 724 Events
 
-- ![Integrateur_Web-OpenclassRoom](./Logo.png)
+- ![Integrateur_Web-OpenclassRoom](./Logo.PNG)
 
 ## Description
 
