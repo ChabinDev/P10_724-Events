@@ -1,6 +1,4 @@
-# P10_724-Events
-- Débugguez le Site d'une Agence d'évènementiel.
-- ![Integrateur_Web-OpenclassRoom](./Logo.PNG) 
+# 724 Events
 
 ## Description
 L'application est le site d'une agence evenementielle.
