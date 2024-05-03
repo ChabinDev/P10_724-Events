@@ -12,12 +12,12 @@ L'application est le site d'une agence évènementielle.
 
 ## Installation
 
-- `yarn install`
+- `npm install`
 
 ## Lancement de l'application
 
-- `yarn start`
+- `npm start`
 
 ## Tests
 
-- `yarn test`
+- `npm run test`
